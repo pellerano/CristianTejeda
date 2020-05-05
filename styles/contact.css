@@ -122,7 +122,6 @@ body {
 .contact .form-wrapper button {
   padding: 1rem 6rem;
   background: #ffffff;
-  border: none;
   cursor: pointer;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;

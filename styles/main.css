@@ -99,7 +99,7 @@ body {
 .hero .hero-head button {
   padding: 1.5rem 6rem;
   background: #ffffff;
-  border: none;
+  border: 3px solid black;
   cursor: pointer;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
