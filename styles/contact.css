@@ -74,13 +74,6 @@ body {
 .contact .form-wrapper {
   width: 90%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 3rem;
 }
 
@@ -126,20 +119,21 @@ body {
   font-family: "Montserrat";
 }
 
-.contact .form-wrapper form button {
-  width: 20%;
-  padding: 1rem 3rem;
-  border: 3px solid black;
+.contact .form-wrapper .button {
+  padding: 1rem 6rem;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
   border-radius: 25px;
   font-family: "Montserrat";
+  border: 3px solid black;
   font-weight: 700;
-  background: white;
-  font-size: 2rem;
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  font-size: 1.5rem;
 }
 
-.contact .form-wrapper form button:hover {
+.contact .form-wrapper .button:hover {
   background: black;
   color: white;
 }
