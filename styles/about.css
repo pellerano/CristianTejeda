@@ -1,0 +1,207 @@
+/*Global Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Navbar Styles*/
+.main-head {
+  background: black;
+}
+
+.main-head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  min-height: 10vh;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.main-head nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.main-head .logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.main-head .logo img {
+  width: 201px;
+  height: 63.45px;
+}
+
+/*About Me Styles*/
+.about-me {
+  min-height: 75vh;
+}
+
+.about-me .about-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 15vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-me .about-head .title {
+  width: 90%;
+  margin: auto;
+}
+
+.about-me .about-head .title h2 {
+  font-size: 5rem;
+}
+
+.about-me .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.about-me .info .box {
+  padding: 5rem;
+  min-height: 68.6vh;
+}
+
+.about-me .info .box-1 {
+  background: url("./images/IMG_002.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-me .info .box-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-me .info .box-2 p {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.about-me .info .box-2 button {
+  padding: 1rem 3rem;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  background: white;
+  font-size: 2rem;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.about-me .info .box-2 button a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+
+.about-me .info .box-2 button:hover {
+  background: black;
+  color: white;
+}
+
+.about-me .info .box-2 button:hover a {
+  color: white;
+}
+
+/*Footer Styles*/
+footer {
+  background: black;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h5 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 932px) {
+  .logo {
+    text-align: center;
+  }
+  .main-head nav ul a {
+    font-size: 1.5rem;
+  }
+  .about-head {
+    text-align: center;
+  }
+  .about-head h2 {
+    font-size: 2rem;
+  }
+  .about-me .info {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=about.css.map */

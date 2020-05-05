@@ -1,0 +1,212 @@
+/*Global Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Navbar Styles*/
+.main-head {
+  background: black;
+}
+
+.main-head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  min-height: 10vh;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.main-head nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.main-head .logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.main-head .logo img {
+  width: 201px;
+  height: 63.45px;
+}
+
+/*Contact Form Styles*/
+.contact {
+  min-height: 83.6vh;
+}
+
+.contact .form-wrapper {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+}
+
+.contact .form-wrapper h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact .form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Montserrat";
+}
+
+.contact .form-wrapper form label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .form-wrapper form input {
+  width: 30%;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+}
+
+.contact .form-wrapper form .msg {
+  width: 50%;
+  min-height: 20vh;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin-bottom: 2rem;
+  resize: none;
+  font-family: "Montserrat";
+}
+
+.contact .form-wrapper form button {
+  width: 20%;
+  padding: 1rem 3rem;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  background: white;
+  font-size: 2rem;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.contact .form-wrapper form button:hover {
+  background: black;
+  color: white;
+}
+
+/*Footer Styles*/
+footer {
+  background: black;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h5 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 932px) {
+  .logo {
+    text-align: center;
+  }
+  .main-head nav ul a {
+    font-size: 1.5rem;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact .form-wrapper h2 {
+    font-size: 3rem;
+  }
+  .contact .form-wrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .form-wrapper form input {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .contact .form-wrapper form .msg {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .contact .form-wrapper form button {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

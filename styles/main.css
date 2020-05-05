@@ -1,0 +1,223 @@
+/*Global Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Navbar & Hero Styles*/
+.main-head {
+  color: white;
+}
+
+.main-head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  min-height: 10vh;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.main-head nav ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.main-head .logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.main-head .logo img {
+  width: 201px;
+  height: 63.45px;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("./images/DSC_5985-Edit-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("./images/DSC_5985-Edit-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  background-position: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-head {
+  width: 90%;
+  margin: auto;
+}
+
+.hero .hero-head h2 {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.hero .hero-head button {
+  padding: 1.5rem 6rem;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  border-radius: 25px;
+}
+
+.hero .hero-head button a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+
+.hero .hero-head button:hover {
+  background: #000000;
+}
+
+.hero .hero-head button:hover a {
+  color: white;
+}
+
+/*Socials Styles*/
+.social {
+  min-height: 30vh;
+  background: #000000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social .social-head {
+  width: 90%;
+  margin: auto;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social .social-head h2 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.social .social-head ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social .social-head ul li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.social .social-head ul li a img {
+  width: 60px;
+}
+
+/*Footer Styles*/
+footer {
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 932px) {
+  .logo {
+    text-align: center;
+  }
+  .main-head nav ul a {
+    font-size: 1.5rem;
+  }
+  .hero .hero-head h2 {
+    font-size: 3rem;
+  }
+  .hero .hero-head button {
+    padding: 1.5rem 3rem;
+  }
+  .hero .hero-head button a {
+    font-size: 1.5rem;
+  }
+  .social .social-head {
+    text-align: center;
+  }
+  .social .social-head h2 {
+    font-size: 2rem;
+  }
+  .social .social-head ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social .social-head ul li a img {
+    width: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

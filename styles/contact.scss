@@ -1,0 +1,188 @@
+/*Global Styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Navbar Styles*/
+
+.main-head {
+  background: black;
+
+  nav {
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+    min-height: 10vh;
+    margin: auto;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      list-style: none;
+      flex: 1 1 40rem;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .logo {
+    flex-grow: 2;
+    img {
+      width: 201px;
+      height: 63.45px;
+    }
+  }
+}
+
+/*Contact Form Styles*/
+
+.contact {
+  min-height: 83.6vh;
+
+  .form-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    h2 {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      font-family: "Montserrat";
+
+      label {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        width: 30%;
+        padding: 1rem 1rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        border: 1px solid gray;
+        font-size: 1.5rem;
+        font-family: "Montserrat";
+      }
+
+      .msg {
+        width: 50%;
+        min-height: 20vh;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid gray;
+        margin-bottom: 2rem;
+        resize: none;
+        font-family: "Montserrat";
+      }
+
+      button {
+        width: 20%;
+        padding: 1rem 3rem;
+        border: 3px solid black;
+        border-radius: 25px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        background: white;
+        font-size: 2rem;
+        transition: ease-in-out 0.5s;
+      }
+
+      button:hover {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}
+
+/*Footer Styles*/
+
+footer {
+  background: black;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h5 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 932px) {
+  .logo {
+    text-align: center;
+  }
+  .main-head {
+    nav {
+      ul {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+
+    .form-wrapper {
+      h2 {
+        font-size: 3rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          width: 90%;
+          margin: auto;
+          margin-bottom: 2rem;
+        }
+
+        .msg {
+          width: 90%;
+          margin: auto;
+          margin-bottom: 2rem;
+        }
+
+        button {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

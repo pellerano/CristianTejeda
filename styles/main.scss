@@ -1,0 +1,202 @@
+/*Global Styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Navbar & Hero Styles*/
+
+.main-head {
+  color: white;
+
+  nav {
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+    min-height: 10vh;
+    margin: auto;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      list-style: none;
+      flex: 1 1 40rem;
+      justify-content: space-around;
+      align-items: center;
+      flex-grow: 1;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .logo {
+    flex-grow: 2;
+    img {
+      width: 201px;
+      height: 63.45px;
+    }
+  }
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./images/DSC_5985-Edit-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .hero-head {
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      font-size: 5rem;
+      padding-bottom: 2rem;
+    }
+
+    button {
+      padding: 1.5rem 6rem;
+      background: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+      border-radius: 25px;
+
+      a {
+        font-family: "Montserrat";
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        font-size: 2rem;
+      }
+    }
+
+    button:hover {
+      background: #000000;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+/*Socials Styles*/
+
+.social {
+  min-height: 30vh;
+  background: #000000;
+  color: white;
+  display: flex;
+
+  .social-head {
+    width: 90%;
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        margin-right: 2rem;
+        a {
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Footer Styles*/
+
+footer {
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h5 {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
+}
+
+/*Media Queries*/
+@media screen and (max-width: 932px) {
+  .logo {
+    text-align: center;
+  }
+  .main-head {
+    nav {
+      ul {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .hero {
+    .hero-head {
+      h2 {
+        font-size: 3rem;
+      }
+
+      button {
+        padding: 1.5rem 3rem;
+
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .social {
+    .social-head {
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+
+      ul {
+        justify-content: center;
+        li {
+          a {
+            img {
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
